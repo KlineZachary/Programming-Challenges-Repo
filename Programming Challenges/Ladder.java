@@ -1,7 +1,6 @@
 import java.util.*;
 import java.io.*;
 public class Ladder {
-
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
         int height = keyboard.nextInt();
@@ -9,5 +8,4 @@ public class Ladder {
         double heightLadder = (height / Math.sin(angle));
         System.out.println((int) Math.ceil(heightLadder));
 	}
-
 }

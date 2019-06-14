@@ -11,37 +11,21 @@ public class ReverseRot {
                 char letter = reverse.charAt(i);
                 if (letter == '_') letter = ('Z' + 1);
                 if (letter == '.') letter = ('Z' + 2);
-
                 letter += shiftNumber;
-                if (letter > 'Z' + 2){
-                    letter -= 28;
-                }
-                if(letter =='Z' + 1) 
-                    letter = '_';
-
-                if(letter =='Z' + 2) 
-                    letter = '.';
-
-
+                if (letter > 'Z' + 2){letter -= 28;}
+                if(letter =='Z' + 1) letter = '_';
+                if(letter =='Z' + 2) letter = '.';
                 reverse.setCharAt(i, letter);
             }
-
-
             System.out.println(reverse.toString());
             shiftNumber = keyboard.nextInt();
-
-        }
-
-        
+        }  
     }
-    
     public static StringBuilder reverseString(String word){
         StringBuilder reverseString = new StringBuilder("");
         for(int i = word.length();i-->0;){
             reverseString.append(word.charAt(i));
         }
-
         return reverseString;
     }
-
 }

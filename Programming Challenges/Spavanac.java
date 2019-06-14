@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-
 public class Spavanac {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
@@ -10,19 +9,8 @@ public class Spavanac {
         if (min < 0){
             min += (24*60);
         }
-
         secondNum = min %60;
         firstNum = min / 60;
-        
-
-
-
-        
-
         System.out.println(firstNum + " " + secondNum);
-
-
-
     }
-
 }

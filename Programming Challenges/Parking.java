@@ -14,20 +14,13 @@ public class Parking {
             max = Math.max(max, deptArray[i] = keyboard.nextInt());
             i++;
         }
-
         for(int j = 1; j <= max; j++){
             int numTrucks = 0;
             for(int k = 0; k < 3;k++){
                 if(arrivalArray[k] <= j && deptArray[k] > j) numTrucks++;
             }
             sum += (truckPrices[numTrucks] * numTrucks);
-
         }
-
         System.out.println(sum);
-       
-    
     }
-    
-  
 }
