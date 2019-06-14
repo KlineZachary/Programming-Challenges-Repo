@@ -8,23 +8,14 @@ public class Man{
         int testCases = keyboard.nextInt();
         int[] number = new int[testCases];
         int i = 0;
-        
-
         while(i < testCases){
             int numberCities = keyboard.nextInt();
             String[] cities = new String[numberCities];
             for(int j = 0; j < numberCities; j++){
                 cities[j] = keyboard.next(); 
             }
-
             i++;
         }
-        
-
-
-
     }
-    // public static int compare(String[] array){
-    //     for(int i = 0; )
-    // }
+
 }
