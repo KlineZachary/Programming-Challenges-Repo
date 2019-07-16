@@ -1,16 +1,12 @@
 import java.util.*;
 import java.io.*;
-
 public class NoDuplicates {
     public static void main(String[] args) {
         Scanner k = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
         String line = k.nextLine();
         String[] words = line.split(" ");
-        if (noRepeat(words)) {
-            System.out.println("yes");
-        } else {
-            System.out.println("no");
-        }
+        if (noRepeat(words)) {System.out.println("yes");}
+        else {System.out.println("no");}
     }
 
     public static boolean noRepeat(String[] words) {
