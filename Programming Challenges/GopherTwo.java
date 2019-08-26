@@ -1,5 +1,5 @@
 import java.util.*;
-//NOT DONE
+//NOT Working second case comes back wrong :/
 public class GopherTwo {
 
     static Vector<Vector<Integer>> adjList = new Vector<>();
@@ -44,8 +44,7 @@ public class GopherTwo {
                 holeY[i] = keyboard.nextDouble();
             }
 
-            for (int i = 0; i < V; i++)
-                adjList.add(new Vector<>());
+            for (int i = 0; i < V; i++) adjList.add(new Vector<>());
 
             for (int i = 0; i < numGlophers; i++) {
                 for (int j = 0; j < numHoles; j++) {
