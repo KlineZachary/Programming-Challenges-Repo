@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class TextEncryption {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

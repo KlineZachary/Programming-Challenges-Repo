@@ -1,17 +1,16 @@
 import java.util.*;
 import java.io.*;
-
 public class AddingWords {
     public static void main(String[] args) throws IOException {
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
         Hashtable<String, Integer> table = new Hashtable<>();
         while (true) {
-            String line = keyboard.readLine();
-            int sum = 0;
-            int sign = 1;
+            String line = keyboard.readLine(), equals = "unknown";
+            if (line == null) break;
+            int sum = 0, sign = 1;
             boolean noGoBro = false;
-            String equals = "unknown";
             if (line.equals("clear")) {
+                // break;
                 table.clear();
                 continue;
             }
@@ -33,6 +32,7 @@ public class AddingWords {
                 sum += table.get(first) * sign;
                 sign = operation.equals("-") ? -1 : 1;
             }
+            
             if (!noGoBro) {
                 for (String key : table.keySet()) {
                     int value = table.get(key);
